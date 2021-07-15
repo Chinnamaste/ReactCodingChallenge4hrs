@@ -1,0 +1,30 @@
+TMDb API:
+
+apiBaseUrl = 'https://api.themoviedb.org/3/search/movie';             - for searching for movies with a search query parameter
+apiBaseUrlPopular = 'https://api.themoviedb.org/3/movie/popular';     - for retrieving movies based on popularity
+apiBaseUrlGenres = 'https://api.themoviedb.org/3/discover/movie';     - for searching for movies based on genre
+
+API returns only 20 results per page, other pages can be retreived by query parameter '&page=2', '&page=3' etc.
+
+API structure for https://api.themoviedb.org/3/search/movie:
+
+data  -- data       -- page
+                    -- results
+                        - adult
+                        - backdrop_path
+                        - genre_ids
+                        - id
+                        - original_language
+                        - original_title
+                        - overview
+                        - popularity
+                        - poster_path (paths for poster images)
+                        - release_date
+                        - title
+                        - video
+                        - vote_average
+                        - vote_count
+      -- header
+      -- request
+      -- proto
+
